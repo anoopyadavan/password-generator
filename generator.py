@@ -3,6 +3,8 @@ from time import sleep
 def banner():
     print("\t\t-----------------------------------------------------")
     print('\t\t|         P A S S W O R D    G E N E R A T O R       |')
+    print('\t\t|               MADE BY ANOOP SINGH YADAV            |')
+    print('\t\t|                anoopyadavan@gmail.com              |')
     print("\t\t-----------------------------------------------------")
 
 def perm1(lst):
