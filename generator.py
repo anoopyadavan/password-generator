@@ -16,15 +16,19 @@ def perm1(lst):
             xs=lst[:i]+lst[i+1:]
             for p in perm1(xs):
                 yield [x]+p
-
+def making_list(data, num):
+	yield data[0:num]
+	
 try:
     banner()
-    minNum=int(input("Enter min length: "))
-    maxNum=int(input("Enter max length: "))
-    data=list('abc1234567890')
-    varl=perm1(data)
-    for i in  varl:
-        print(''.join(i))
+    minNum=int(input("Enter min length(default 2): ") or 2)
+    maxNum=int(input("Enter max length(default 7): ") or 7)
+    data=list(input("Enter character(default abc1234): ") or 'abc1234')
+    for i in range(minNum,maxNum+1):
+    	temp=list(making_list(data, i))
+    	varl=perm1(temp[0])
+    	for i in  varl:
+    		print(''.join(i))
 except KeyboardInterrupt as e:
     print('Quiting...')
     sleep(0.5)
