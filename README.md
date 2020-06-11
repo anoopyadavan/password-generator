@@ -1,5 +1,5 @@
 <h3>A tool of password generator.</h3>
-![Alt text](password_generator.png?raw=true "password_generator.png")
+![password-generator](password_generator.png?raw=true "password_generator.png")
 <a href="https://github.com/anoopyadavan/password-generator/archive/master.zip">Download</a>
 
 <h4>How to install</h4>
